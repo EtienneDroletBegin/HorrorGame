@@ -24,6 +24,7 @@ public class Expand : MonoBehaviour
         if (other.CompareTag("monster"))
         {
             print("he heard you");
+            other.GetComponent<monster>().NewDestination(transform.position);
         }
     }
 }

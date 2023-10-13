@@ -9,7 +9,7 @@ public class CreateSoundWave : MonoBehaviour
     public void Create(Transform pos)
     {
         GameObject newSound = Instantiate(sound);
-        newSound.GetComponent<Expand>().setMaxSize(20f);
+        newSound.GetComponent<Expand>().setMaxSize(15f);
         if (GetComponent<GrabbableObject>())
         {
             print(GetComponent<Rigidbody>().velocity.magnitude);
